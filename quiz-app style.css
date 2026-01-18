@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  background-color: #f5f2eb; /* 和紙っぽい色 */
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border: 2px solid #3a3a3a; /* 墨色 */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2f2f2f;
+}
+
+#timer {
+  font-size: 16px;
+  color: #6b4f3f; /* 茶色 */
+}
+
+#question {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+button {
+  width: 100%;
+  font-size: 18px;
+  padding: 14px;
+  margin: 6px 0;
+  border-radius: 30px;
+  border: none;
+  background-color: #7a2e2e; /* えんじ色 */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+#restart {
+  background-color: #2e5f4f; /* 深緑 */
+}
+
+/* 正誤表示 */
+.correct {
+  color: #2e7d32; /* 緑 */
+  font-weight: bold;
+}
+
+.wrong {
+  color: #b71c1c; /* 赤 */
+  font-weight: bold;
+}
+
+.timeout {
+  color: #555555;
+  font-weight: bold;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 16px;
+  }
+}
